@@ -4,9 +4,6 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(cors());
-app.use("/", (req, res) => {
-  res.send({ ping: "pong" }, 200);
-});
 app.use(
   "/identity/token",
   createProxyMiddleware({
