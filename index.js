@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 // app.use(cors());
 var whitelist = [
   "http://localhost",
-  "localhost:8080",
+  "http://localhost:8080",
   "https://listening.netlify.app",
 ];
 var corsOptions = {
